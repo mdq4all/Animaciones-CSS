@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Inicio botonera movil */
+nav#botoneraMovil {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    background: #fff;
+    top: 50px;
+    left: -100%;
+    transition: left 1s ease-in-out;
+}
+nav#botoneraMovil ul li {
+    width: 100%;
+    line-height: 40px;
+    text-align: center; 
+    border: 1px solid #fff;
+    background: #ccc; 
+} 
+nav#botoneraMovil ul li:hover {
+    background: #aaa;
+}
+
+#labelMovil span{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(../img/boton1.jpg) no-repeat;
+    margin: 5px;
+    cursor: pointer;
+}
+#botonMovil {
+    display: none;
+}
+#labelMovil h2{
+    position: absolute;
+    top: 10px;
+    left: 60px;
+}
+#labelMovil span:hover {
+    background: url(../img/boton2.jpg) no-repeat;
+}
+#botonMovil:checked + #labelMovil span {
+    background: url(../img/boton3.jpg) no-repeat;
+}
+#botonMovil:checked ~ #botoneraMovil {
+    left: 0;
+}

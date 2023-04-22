@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#acordeon input {
+    display: none;
+}
+#acordeon label {
+    display: block;
+    width: 100%;
+    line-height: 80px;
+    text-align: center;
+    background: #ccc;
+    border: 1px solid #555;
+    cursor: pointer;
+}
+#acordeon h1 {
+    padding: 5%;
+}
+#acordeon img {
+    padding: 0% 5%;
+}
+#acordeon p {
+    width: 90%;
+    padding: 5%;
+    text-align: justify;
+}
+#acordeon div {
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+#bloque1:checked ~ #cont1 {
+    height: 700px;
+}
+#bloque2:checked ~ #cont2 {
+    height: 700px;
+}
+#bloque3:checked ~ #cont3 {
+    height: 700px;
+}
